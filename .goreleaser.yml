@@ -32,18 +32,11 @@ archives:
   - id: default
     formats:
       - tar.gz
-    name_template: >-
-      {{ .ProjectName }}_
-      {{- .Version }}_
-      {{- .Os }}_
-      {{- .Arch }}
-    files:
-      - README.md
-      - README.ko.md
-      - LICENSE*
-  - id: windows
-    formats:
       - zip
+    format_overrides:
+      - goos: windows
+        formats:
+          - zip
     name_template: >-
       {{ .ProjectName }}_
       {{- .Version }}_
@@ -53,10 +46,6 @@ archives:
       - README.md
       - README.ko.md
       - LICENSE*
-    builds:
-      - gopherscript
-    goos:
-      - windows
 
 checksum:
   name_template: 'checksums.txt'
