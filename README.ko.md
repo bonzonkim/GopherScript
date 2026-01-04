@@ -28,20 +28,23 @@ GopherScript는 LLM(Large Language Model)을 활용하여 Python 또는 Shell �
 **Linux/macOS (한 줄 설치):**
 ```bash
 # Linux (amd64)
-curl -sL https://github.com/bonzonkim/GopherScript/releases/latest/download/gopherscript_linux_amd64.tar.gz | tar xz
+VERSION=$(curl -s https://api.github.com/repos/bonzonkim/GopherScript/releases/latest | grep tag_name | cut -d '"' -f 4 | sed 's/v//')
+curl -sL "https://github.com/bonzonkim/GopherScript/releases/download/v${VERSION}/GopherScript_${VERSION}_linux_amd64.tar.gz" | tar xz
 sudo mv gopherscript /usr/local/bin/
 
 # macOS (Apple Silicon)
-curl -sL https://github.com/bonzonkim/GopherScript/releases/latest/download/gopherscript_darwin_arm64.tar.gz | tar xz
+VERSION=$(curl -s https://api.github.com/repos/bonzonkim/GopherScript/releases/latest | grep tag_name | cut -d '"' -f 4 | sed 's/v//')
+curl -sL "https://github.com/bonzonkim/GopherScript/releases/download/v${VERSION}/GopherScript_${VERSION}_darwin_arm64.tar.gz" | tar xz
 sudo mv gopherscript /usr/local/bin/
 
 # macOS (Intel)
-curl -sL https://github.com/bonzonkim/GopherScript/releases/latest/download/gopherscript_darwin_amd64.tar.gz | tar xz
+VERSION=$(curl -s https://api.github.com/repos/bonzonkim/GopherScript/releases/latest | grep tag_name | cut -d '"' -f 4 | sed 's/v//')
+curl -sL "https://github.com/bonzonkim/GopherScript/releases/download/v${VERSION}/GopherScript_${VERSION}_darwin_amd64.tar.gz" | tar xz
 sudo mv gopherscript /usr/local/bin/
 ```
 
 **Windows:**
-1. [Releases](https://github.com/bonzonkim/GopherScript/releases)에서 `gopherscript_windows_amd64.zip` 다운로드
+1. [Releases](https://github.com/bonzonkim/GopherScript/releases)에서 `GopherScript_<version>_windows_amd64.zip` 다운로드
 2. 압축 해제 후 PATH에 추가
 
 ### Go Install 사용

@@ -28,20 +28,23 @@ Download the latest release for your platform from the [Releases page](https://g
 **Linux/macOS (one-liner):**
 ```bash
 # Linux (amd64)
-curl -sL https://github.com/bonzonkim/GopherScript/releases/latest/download/gopherscript_linux_amd64.tar.gz | tar xz
+VERSION=$(curl -s https://api.github.com/repos/bonzonkim/GopherScript/releases/latest | grep tag_name | cut -d '"' -f 4 | sed 's/v//')
+curl -sL "https://github.com/bonzonkim/GopherScript/releases/download/v${VERSION}/GopherScript_${VERSION}_linux_amd64.tar.gz" | tar xz
 sudo mv gopherscript /usr/local/bin/
 
 # macOS (Apple Silicon)
-curl -sL https://github.com/bonzonkim/GopherScript/releases/latest/download/gopherscript_darwin_arm64.tar.gz | tar xz
+VERSION=$(curl -s https://api.github.com/repos/bonzonkim/GopherScript/releases/latest | grep tag_name | cut -d '"' -f 4 | sed 's/v//')
+curl -sL "https://github.com/bonzonkim/GopherScript/releases/download/v${VERSION}/GopherScript_${VERSION}_darwin_arm64.tar.gz" | tar xz
 sudo mv gopherscript /usr/local/bin/
 
 # macOS (Intel)
-curl -sL https://github.com/bonzonkim/GopherScript/releases/latest/download/gopherscript_darwin_amd64.tar.gz | tar xz
+VERSION=$(curl -s https://api.github.com/repos/bonzonkim/GopherScript/releases/latest | grep tag_name | cut -d '"' -f 4 | sed 's/v//')
+curl -sL "https://github.com/bonzonkim/GopherScript/releases/download/v${VERSION}/GopherScript_${VERSION}_darwin_amd64.tar.gz" | tar xz
 sudo mv gopherscript /usr/local/bin/
 ```
 
 **Windows:**
-1. Download `gopherscript_windows_amd64.zip` from [Releases](https://github.com/bonzonkim/GopherScript/releases)
+1. Download `GopherScript_<version>_windows_amd64.zip` from [Releases](https://github.com/bonzonkim/GopherScript/releases)
 2. Extract and add to PATH
 
 ### Using Go Install
