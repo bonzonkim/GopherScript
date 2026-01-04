@@ -28,15 +28,15 @@ Download the latest release for your platform from the [Releases page](https://g
 **Linux/macOS (one-liner):**
 ```bash
 # Linux (amd64)
-curl -sL https://github.com/bonzonkim/gopher-script/releases/latest/download/gopherscript_linux_amd64.tar.gz | tar xz
+curl -sL https://github.com/bonzonkim/GopherScript/releases/latest/download/gopherscript_linux_amd64.tar.gz | tar xz
 sudo mv gopherscript /usr/local/bin/
 
 # macOS (Apple Silicon)
-curl -sL https://github.com/bonzonkim/gopher-script/releases/latest/download/gopherscript_darwin_arm64.tar.gz | tar xz
+curl -sL https://github.com/bonzonkim/GopherScript/releases/latest/download/gopherscript_darwin_arm64.tar.gz | tar xz
 sudo mv gopherscript /usr/local/bin/
 
 # macOS (Intel)
-curl -sL https://github.com/bonzonkim/gopher-script/releases/latest/download/gopherscript_darwin_amd64.tar.gz | tar xz
+curl -sL https://github.com/bonzonkim/GopherScript/releases/latest/download/gopherscript_darwin_amd64.tar.gz | tar xz
 sudo mv gopherscript /usr/local/bin/
 ```
 
@@ -47,14 +47,14 @@ sudo mv gopherscript /usr/local/bin/
 ### Using Go Install
 
 ```bash
-go install github.com/bonzonkim/gopher-script@latest
+go install github.com/bonzonkim/GopherScript@latest
 ```
 
 ### Build from Source
 
 ```bash
-git clone https://github.com/bonzonkim/gopher-script.git
-cd gopher-script
+git clone https://github.com/bonzonkim/GopherScript.git
+cd GopherScript
 go build -o gopherscript .
 ```
 
