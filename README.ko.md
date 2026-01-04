@@ -23,7 +23,7 @@ GopherScript는 LLM(Large Language Model)을 활용하여 Python 또는 Shell �
 
 ### 릴리스에서 다운로드 (권장)
 
-[Releases 페이지](https://github.com/bonzonkim/gopher-script/releases)에서 플랫폼에 맞는 최신 릴리스를 다운로드하세요.
+[Releases 페이지](https://github.com/bonzonkim/GopherScript/releases)에서 플랫폼에 맞는 최신 릴리스를 다운로드하세요.
 
 **Linux/macOS (한 줄 설치):**
 ```bash
@@ -41,7 +41,7 @@ sudo mv gopherscript /usr/local/bin/
 ```
 
 **Windows:**
-1. [Releases](https://github.com/bonzonkim/gopher-script/releases)에서 `gopherscript_windows_amd64.zip` 다운로드
+1. [Releases](https://github.com/bonzonkim/GopherScript/releases)에서 `gopherscript_windows_amd64.zip` 다운로드
 2. 압축 해제 후 PATH에 추가
 
 ### Go Install 사용

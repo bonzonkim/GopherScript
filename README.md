@@ -23,7 +23,7 @@ GopherScript leverages LLM (Large Language Model) to convert Python or Shell scr
 
 ### From Releases (Recommended)
 
-Download the latest release for your platform from the [Releases page](https://github.com/bonzonkim/gopher-script/releases).
+Download the latest release for your platform from the [Releases page](https://github.com/bonzonkim/GopherScript/releases).
 
 **Linux/macOS (one-liner):**
 ```bash
@@ -41,7 +41,7 @@ sudo mv gopherscript /usr/local/bin/
 ```
 
 **Windows:**
-1. Download `gopherscript_windows_amd64.zip` from [Releases](https://github.com/bonzonkim/gopher-script/releases)
+1. Download `gopherscript_windows_amd64.zip` from [Releases](https://github.com/bonzonkim/GopherScript/releases)
 2. Extract and add to PATH
 
 ### Using Go Install
