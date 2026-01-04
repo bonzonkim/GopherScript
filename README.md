@@ -1,5 +1,11 @@
 # GopherScript
 
+<div align=center>
+
+[English](README.md) | [한국어](README.ko.md)
+
+</div>
+
 ![GopherScript Logo](gopherScript-logo.png)
 
 A CLI tool that converts Python and Shell scripts into Go static binaries.

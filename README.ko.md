@@ -1,5 +1,11 @@
 # GopherScript
 
+<div align=center>
+
+[한국어](README.ko.md) | [English](README.md) 
+
+</div>
+
 ![GopherScript Logo](gopherScript-logo.png)
 
 Python, Shell 스크립트를 Go 정적 바이너리로 변환하는 CLI 도구입니다.
