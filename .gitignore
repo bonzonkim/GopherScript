@@ -1,2 +1,5 @@
 .crush
 CRUSH.md
+.env
+gopherscript
+dist/
