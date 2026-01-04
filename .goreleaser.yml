@@ -30,19 +30,33 @@ builds:
 
 archives:
   - id: default
-    format: tar.gz
+    formats:
+      - tar.gz
     name_template: >-
       {{ .ProjectName }}_
       {{- .Version }}_
       {{- .Os }}_
       {{- .Arch }}
-    format_overrides:
-      - goos: windows
-        format: zip
     files:
       - README.md
       - README.ko.md
       - LICENSE*
+  - id: windows
+    formats:
+      - zip
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_
+      {{- .Os }}_
+      {{- .Arch }}
+    files:
+      - README.md
+      - README.ko.md
+      - LICENSE*
+    builds:
+      - gopherscript
+    goos:
+      - windows
 
 checksum:
   name_template: 'checksums.txt'
@@ -61,7 +75,7 @@ changelog:
 release:
   github:
     owner: bonzonkim
-    name: gopher-script
+    name: GopherScript
   draft: false
   prerelease: auto
   name_template: "{{.Tag}}"
