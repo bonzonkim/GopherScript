@@ -3,3 +3,6 @@ CRUSH.md
 .env
 gopherscript
 dist/
+examples/*.go
+examples/example-py
+examples/example-sh
